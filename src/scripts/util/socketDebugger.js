@@ -68,7 +68,7 @@ export default class SocketDebugger {
   @autobind
   onKeyDown(e) {
     if (e.keyCode === 8) {
-      e.preventDefault();
+      //e.preventDefault();
       if (e.shiftKey) {
         let run = this.runningInputs.player2.data.running;
         this.runningInputs.player2.data.running = run.slice(0, run.length - 1);
